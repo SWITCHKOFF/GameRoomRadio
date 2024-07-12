@@ -1,0 +1,87 @@
+$background-color: #4BB049;
+$text-color: #fff;
+
+body
+{
+    margin: 0;
+}
+header
+{
+    background-color: $background-color;
+    .header-container
+    {
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        height: 110px;
+        .header-logo
+        {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            span
+            {
+                font-family: 'Staaliches';
+                font-size: 32px;
+                color: $text-color;
+                line-height: 32px;
+            }
+        }
+        div
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        a
+        {
+            text-decoration: none;
+            font-family: 'Oswald';
+            font-size: 24px;
+            color: $text-color;
+        }
+        .header-menu__search
+        {
+            grid-column: span 2;
+            background-color: $text-color;
+            form
+            {
+                display: flex;
+                input
+                {
+                    border: none;
+                    border-bottom: 4px solid $background-color;
+                    padding: 0;
+                    color: $background-color;
+                    font-size: 24px;
+                    font-family: 'Oswald';
+                    font-weight: 400;
+                }
+                input:focus
+                {
+                    outline: none;
+                }
+                input:focus::placeholder
+                {
+                    color: transparent;
+                }
+                input::placeholder
+                {
+                    color: $background-color;
+                    font-family: 'Oswald';
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                button
+                {
+                    background-color: $text-color;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

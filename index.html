@@ -3,18 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="resources/css/style.min.css">-->
-
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="main/fonts/importFonts.css">
+    <link rel="stylesheet" href="main/css/style.min.css">
+    <title>GameRoom Radio</title>
 </head>
 <body>
-    <!--<h1>Работающий заголовок</h1>
-    <a href="">UPDATED</a>-->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="main/img/svg/logo.svg" alt="logotype">
+                <span>GAMEROOM<br>RADIO</span>
+            </div>
+            <div class="header-menu__option-songs">
+                <a href="#">Песни</a>
+            </div>
+            <div class="header-menu__option-podcasts">
+                <a href="#">Подкасты</a>
+            </div>
+            <div class="header-menu__option-news">
+                <a href="#">Новости</a>
+            </div>
+            <div class="header-menu__option-about">
+                <a href="#">О нас</a>
+            </div>
+            <div class="header-menu__option-support">
+                <a href="#">Поддержка</a>
+            </div>
+            <div class="header-menu__search">
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <button type="submit" id="searchButton" class="search-button">
+                            <img src="main/img/svg/search.svg" alt="search">
+                        </button>
+                        <input type="text" name="query" class="search-input" placeholder="Поиск">
+                    </form>
+                </div>
+            </div>
+            <div class="header-menu__user-options">
+                <div class="user-options__option-likes">
+                    <a href="#"><img src="main/img/svg/likes.svg"></a>
+                </div>
+                <div class="user-options__option-bookmarks">
+                    <a href="#"><img src="main/img/svg/bookmarks.svg"></a>
+                </div>
+                <div class="user-options__option-user">
+                    <a href="#"><img src="main/img/svg/user.svg"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="player">
+            <div class="player-info">
 
-    <div id="root"></div>
-<script src="resources/js/index.js" type="text/babel"></script>
+            </div>
+            <div class="player-options">
+                <div class="change-volume">
+
+                </div>
+                <div class="change-bitrate">
+
+                </div>
+            </div>
+    </div>
+    <main>
+        <div class="banner-block">
+            <h2></h2>
+            <p></p>
+        </div>
+    </main>
 </body>
 </html>
