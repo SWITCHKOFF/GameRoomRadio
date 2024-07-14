@@ -59,6 +59,7 @@ header
                     font-size: 24px;
                     font-family: 'Oswald';
                     font-weight: 400;
+                    width: 75%;
                 }
                 input:focus
                 {
@@ -78,6 +79,128 @@ header
                 button
                 {
                     background-color: $text-color;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: end;
+                }
+            }
+        }
+    }
+}
+main
+{
+    .banner
+    {
+        background-image:url(../img/webp/banner.webp);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 843px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        color: $text-color;
+        font-family: 'Oswald';
+        h1
+        {
+            margin-bottom: 0px;
+            text-align: center;
+            font-weight: 600;
+        }
+        p
+        {
+            margin-bottom: 100px;
+            font-weight: 400;
+            font-size: 24px;
+            width: 25%;
+        }
+    }
+    .player
+    {
+        background-color: $background-color;
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        #player-status
+        {
+            font-family: 'Oswald';
+            font-size: 24px;
+            color: $text-color;
+            grid-column-start: 2;
+            display: flex;
+            align-items: center;
+        }
+        .album-container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../img/webp/album.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 120px;
+            width: 150px;
+            button
+            {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .song-container
+        {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            color: $text-color;
+            font-family: 'Oswald';
+            font-size: 24px;
+            #sound-type
+            {
+                font-weight: 600;
+            }
+        }
+        .change-volume
+        {
+            grid-column-start: 10;
+            grid-column-end: 11;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button
+            {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .change-bitrate
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: $text-color;
+            font-family: 'Oswald';
+            font-size: 24px;
+            .bitrate-variants
+            {
+                button
+                {
+                    color: $text-color;
+                    font-size: 24px;
+                    font-family: 'Oswald';
+                    background-color: transparent;
                     border: none;
                     cursor: pointer;
                 }
