@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main/fonts/importFonts.css">
     <link rel="stylesheet" href="main/css/style.min.css">
+    <link rel="stylesheet" href="main/css/swiper.min.css">
     <title>GameRoom Radio</title>
 </head>
 <body>
@@ -53,12 +54,19 @@
         </div>
     </header>
     <main>
-        <div class="banner">
-            <h1>ДЕНЬ РАДИО</h1>
-            <p>Насладитесь потоком энергии, мелодий, и историй прямо на волне нашей станции.</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h1>ДЕНЬ РАДИО</h1>
+                    <p>Насладитесь потоком энергии, мелодий, и историй прямо на волне нашей станции.</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="player">
-            <span id="player-status">В эфире!</span>
+            <span id="player-status">unknown_status</span>
             <div class="album-container">
                 <button id="playRadio">
                     <img src="main/img/svg/play.svg" alt="play">
@@ -66,8 +74,8 @@
                 </button>
             </div>
             <div class="song-container">
-                <span id="sound-type">Песня</span>
-                <span id="sound-name">Guns N' Roses - Don't Cry</span>
+                <span id="sound-type">unknown_type</span>
+                <span id="sound-name">unknown_name</span>
             </div>
             <div class="change-volume">
                 <button id="volume-button">
@@ -83,5 +91,24 @@
             </div>
         </div>
     </main>
+<script src="main/js/swiper.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
 </body>
 </html>
