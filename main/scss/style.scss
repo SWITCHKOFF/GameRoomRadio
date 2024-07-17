@@ -226,4 +226,192 @@ main
             }
         }
     }
+    .sounds-block
+    {
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        grid-template-rows: repeat(6, 110px);
+        row-gap: 30px;
+        background-color: $background-dark-color;
+        .songs-search-form-container
+        {
+            grid-column: span 4;
+            grid-row: span 3;
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            background-color: $background-color;
+            font-family: 'Oswald';
+            color: $text-color;
+            font-size: 20px;
+            form
+            {
+                grid-column-start: 2;
+                grid-column-end: 5;
+                display: grid;
+                grid-template-rows: 120px 100px 120px;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                h2
+                {
+                    margin: 0;
+                    font-size: 36px;
+                    grid-row: 1;
+                    grid-column: span 3;
+                    display: flex;
+                    align-items: end;
+                }
+                .songs-form-date, .songs-form-time
+                {
+                    grid-row: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    label
+                    {
+                        padding-bottom: 5px;
+                    }
+                    input
+                    {
+                        height: 50px;
+                    }
+                }
+                .songs-form-time
+                {
+                    margin-right: 15px;
+                }
+                .songs-form-date
+                {
+                    grid-column: span 2;
+                }
+                .songs-form-submit
+                {
+                    grid-row: 3;
+                    grid-column: span 2;
+                    display: flex;
+                    justify-content: start;
+                    height: 50px;
+                    button
+                    {
+                        width: 100%;
+                        background-color: $text-color;
+                        color: $background-color;
+                        border: none;
+                        cursor: pointer;
+                        font-family: 'Oswald';
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        h2
+        {
+            font-family: 'Oswald';
+            font-size: 32px;
+            color: $text-color;
+            grid-column-start: 6;
+            grid-column-end: 9;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: end;
+        }
+        .sound-container
+        {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: $background-color;
+            grid-column-start: 6;
+            grid-column-end: 12;
+            width: 100%;
+            height: 100%;
+            button
+            {
+                background-color: transparent;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+            .sound-container__play
+            {
+                grid-column: 1;
+                background-image: url(../img/webp/album.webp);
+            }
+            span
+            {
+                font-family: 'Oswald';
+                font-size: 24px;
+                color: $text-color;
+            }
+            .sound-type
+            {
+                font-weight: 600;
+            }
+            .sound-info
+            {
+                grid-column: span 2;
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+            }
+            .sound-info-advanced
+            {
+                grid-column: 6;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: center;
+                margin-right: 10px;
+                margin-bottom: 5px;
+                .sound-options
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    align-items: end;
+                    button
+                    {
+                        margin-left: 10px;
+                        img
+                        {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        width: 70%;
+                        height: 70%;
+                    }
+                }
+                .sound-date
+                {
+                    justify-self: start;
+                }
+            }
+        }
+        .sound-container:nth-of-type(n+4)
+        {
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+        #sounds-showAll
+        {
+            grid-row: 6;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            height: 50px;
+            border: none;
+            background-color: $background-color;
+            cursor: pointer;
+            font-family: 'Oswald';
+            font-size: 24px;
+            color: $text-color;
+            padding: 0;
+        }
+    }
 }
