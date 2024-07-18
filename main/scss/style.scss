@@ -5,6 +5,7 @@ $background-dark-color: #0E180D;
 body
 {
     margin: 0;
+    background-color: $background-dark-color;
 }
 header
 {
@@ -94,11 +95,6 @@ header
 }
 main
 {
-    .swiper
-    {
-      width: 100%;
-      height: 100%;
-    }
     .swiper-slide
     {
         width: 100%;
@@ -563,6 +559,200 @@ main
                 color: $text-color;
                 height: 50px;
                 width: 100%;
+            }
+        }
+    }
+    .news-block
+    {
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        grid-template-rows: 150px repeat(2, 1fr) 150px;
+        height: max-content;
+        background-color: $background-dark-color;
+        .news__search-block
+        {
+            grid-row: 1;
+            grid-column: span 12;
+            background-color: $background-color;
+            display: grid;
+            grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+            font-family: 'Oswald';
+            color: $text-color;
+            form
+            {
+                grid-column-start: 2;
+                grid-column-end: 12;
+                display: grid; 
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(2, 75px);
+                font-size: 20px;
+                input
+                {
+                    border: none;
+                    height: 32px;
+                }
+                h2
+                {
+                    grid-column: span 2;
+                    grid-row: span 2;
+                    text-align: center;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 48px;
+                    font-weight: 400;
+                    line-height: 56px;
+                }
+                .news__form-search, .news__form-submit
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    grid-row: span 2;
+                    margin: 0 10px;
+                    input
+                    {
+                        font-family: 'Oswald';
+                        font-size: 24px;
+                        color: $background-color;
+                    }
+                    input:focus
+                    {
+                        outline: none;
+                    }
+                }
+                .news__form-search
+                {
+                    grid-column: span 5;
+                }
+                .news__form-submit
+                {
+                    grid-column-start: 9;
+                    grid-column-end: 12;
+                    button
+                    {
+                        border: none;
+                        background-color: $text-color;
+                        font-size: 24px;
+                        font-family: 'Oswald';
+                        color: $background-color;
+                        height: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .news-container
+        {
+            grid-column-start: 2;
+            grid-column-end: 12;
+            grid-row: span 2;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            .news-card
+            {
+                margin: 50px 10px 0 10px;
+                grid-column: span 5;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-family: 'Oswald';
+                color: $text-color;
+                background-color: $background-color;
+                .news-card__picture
+                {
+                    width: 100%;
+                    height: 150px;
+                    background-image: url(../img/webp/album.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .news-card__info
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h2
+                    {
+                        margin-bottom: 0px;
+                    }
+                }
+                .news-card__info-advanced
+                {
+                    margin: 0 10px 10px 10px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: end;
+                    .news-card__options
+                    {
+                        button
+                        {
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                        }
+                    }
+                    #news-card__search
+                    {
+                        text-align: end;
+                    }
+                }
+            }
+        }
+        .news-button__showAll-container
+        {
+            grid-row: 4;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            display: flex;
+            margin-top: 35px;
+            #news-button__showAll
+            {
+                border: none;
+                background-color: $background-color;
+                cursor: pointer;
+                font-family: 'Oswald';
+                font-size: 24px;
+                color: $text-color;
+                height: 50px;
+                width: 100%;
+            }
+        }
+    }
+}
+footer
+{
+    background-color: $background-color;
+    display: grid;
+    grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    .social-media-container
+    {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        h2
+        {
+            margin-bottom: 15px;
+            font-family: 'Oswald';
+            font-size: 32px;
+            color: $text-color;
+        }
+        .social-media-links-container
+        {
+            button
+            {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
             }
         }
     }
