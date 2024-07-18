@@ -1,0 +1,277 @@
+$background-color: #4BB049;
+$text-color: #fff;
+$background-dark-color: #0E180D;
+
+body
+{
+    margin: 0;
+    background-color: $background-dark-color;
+}
+header
+{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: $background-color;
+    .header-container
+    {
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        height: 110px;
+        .header-logo
+        {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            span
+            {
+                font-family: 'Staaliches';
+                font-size: 32px;
+                color: $text-color;
+                line-height: 32px;
+            }
+        }
+        div
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        a
+        {
+            text-decoration: none;
+            font-family: 'Oswald';
+            font-size: 24px;
+            color: $text-color;
+        }
+        .header-menu__search
+        {
+            grid-column: span 2;
+            background-color: $text-color;
+            form
+            {
+                display: flex;
+                input
+                {
+                    border: none;
+                    border-bottom: 4px solid $background-color;
+                    padding: 0;
+                    color: $background-color;
+                    font-size: 24px;
+                    font-family: 'Oswald';
+                    font-weight: 400;
+                    width: 75%;
+                }
+                input:focus
+                {
+                    outline: none;
+                }
+                input:focus::placeholder
+                {
+                    color: transparent;
+                }
+                input::placeholder
+                {
+                    color: $background-color;
+                    font-family: 'Oswald';
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                button
+                {
+                    background-color: $text-color;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: end;
+                }
+            }
+        }
+    }
+}
+main
+{
+    .player
+    {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 2;
+        background-color: $background-color;
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        #player-status
+        {
+            font-family: 'Oswald';
+            font-size: 24px;
+            color: $text-color;
+            grid-column-start: 2;
+            display: flex;
+            align-items: center;
+        }
+        .album-container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../img/webp/album.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 120px;
+            width: 150px;
+            button
+            {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .song-container
+        {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            color: $text-color;
+            font-family: 'Oswald';
+            font-size: 24px;
+            #sound-type
+            {
+                font-weight: 600;
+            }
+        }
+        .change-volume
+        {
+            grid-column-start: 10;
+            grid-column-end: 11;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button
+            {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .change-bitrate
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: $text-color;
+            font-family: 'Oswald';
+            font-size: 24px;
+            .bitrate-variants
+            {
+                button
+                {
+                    color: $text-color;
+                    font-size: 24px;
+                    font-family: 'Oswald';
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .error-block
+    {
+        display: grid;
+        grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+        grid-template-rows: 400px 100px 200px;
+        gap: 10px;
+        h1, p, a
+        {
+            font-family: 'Oswald';
+            font-size: 24px;
+            margin: 0;
+            color: $text-color;
+        }
+        a
+        {
+            height: 45px;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 5px;
+        }
+        h1
+        {
+            font-size: 128px;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        p
+        {
+            grid-row: 2;
+            grid-column-start: 5;
+            grid-column-end: 9;
+            display: flex;
+            justify-content: center;
+        }
+        a:first-of-type
+        {
+            grid-row: 3;
+            grid-column-start: 5;
+            grid-column-end: 7;
+            background-color: $text-color;
+            color: $background-color;
+        }
+        a:last-of-type
+        {
+            grid-row: 3;
+            grid-column-start: 7;
+            grid-column-end: 9;
+            background-color: $background-color;
+        }
+    }
+}
+footer
+{
+    background-color: $background-color;
+    display: grid;
+    grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    .social-media-container
+    {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        h2
+        {
+            margin-bottom: 15px;
+            font-family: 'Oswald';
+            font-size: 32px;
+            color: $text-color;
+        }
+        .social-media-links-container
+        {
+            button
+            {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}

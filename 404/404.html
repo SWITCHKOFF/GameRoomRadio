@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main/fonts/importFonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>GameRoom Radio</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="header-logo">
+                <img src="../main/img/svg/logo.svg" alt="logotype">
+                <span>GAMEROOM<br>RADIO</span>
+            </a>
+            <div class="header-menu__option-songs">
+                <a href="404.html">Песни</a>
+            </div>
+            <div class="header-menu__option-podcasts">
+                <a href="404.html">Подкасты</a>
+            </div>
+            <div class="header-menu__option-news">
+                <a href="404.html">Новости</a>
+            </div>
+            <div class="header-menu__option-about">
+                <a href="404.html">О нас</a>
+            </div>
+            <div class="header-menu__option-support">
+                <a href="404.html">Поддержка</a>
+            </div>
+            <div class="header-menu__search">
+                <div class="search-container">
+                    <form action="404.html" method="get">
+                        <button type="submit" id="searchButton" class="search-button">
+                            <img src="../main/img/svg/search.svg" alt="search">
+                        </button>
+                        <input type="text" name="query" class="search-input" placeholder="Поиск">
+                    </form>
+                </div>
+            </div>
+            <div class="header-menu__user-options">
+                <div class="user-options__option-likes">
+                    <a href="404.html"><img src="../main/img/svg/likes.svg"></a>
+                </div>
+                <div class="user-options__option-bookmarks">
+                    <a href="404.html"><img src="../main/img/svg/bookmarks.svg"></a>
+                </div>
+                <div class="user-options__option-user">
+                    <a href="404.html"><img src="../main/img/svg/user.svg"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="player">
+            <span id="player-status">unknown_status</span>
+            <div class="album-container">
+                <button id="playRadio">
+                    <img src="../main/img/svg/play.svg" alt="play">
+                    <audio id="audio" src=""></audio>
+                </button>
+            </div>
+            <div class="song-container">
+                <span id="sound-type">unknown_type</span>
+                <span id="sound-name">unknown_name</span>
+            </div>
+            <div class="change-volume">
+                <button id="volume-button">
+                    <img src="../main/img/svg/speaker.svg" alt="volume">
+                </button>
+            </div>
+            <div class="change-bitrate">
+                <span>Битрейт</span>
+                <div class="bitrate-variants">
+                    <button id="bitrate-128">128</button>
+                    <button id="bitrate-256">256</button>
+                </div>
+            </div>
+        </div>
+        <div class="error-block">
+            <h1>404</h1>
+            <p>Страница не найдена или находится в разработке</p>
+            <a href="../index.html">Вернуться на главную</a>
+            <a href="404.html">Написать в поддержку</a>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media-container">
+            <h2>Мы в соц. сетях:</h2>
+            <div class="social-media-links-container">
+                <button id="youtube-link">
+                    <img src="../main/img/svg/youtube.svg" alt="youtube link">
+                </button>
+                <button id="instagram-link">
+                    <img src="../main/img/svg/instagram.svg" alt="instagram link">
+                </button>
+                <button id="telegram-link">
+                    <img src="../main/img/svg/telegram.svg" alt="telegram link">
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
