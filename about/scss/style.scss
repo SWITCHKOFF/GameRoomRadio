@@ -5,7 +5,7 @@ $background-dark-color: #0E180D;
 body
 {
     margin: 0;
-    background-color: $background-dark-color;
+    background-color: $text-color;
 }
 header
 {
@@ -189,58 +189,75 @@ main
             }
         }
     }
-    .error-block
+    .about-block
     {
         display: grid;
         grid-template-columns: 2fr repeat(10, 1fr) 2fr;
-        grid-template-rows: 400px 100px 200px;
+        grid-template-rows: 120px 400px 300px;
         gap: 10px;
-        h1, p, a
+        font-family: 'Oswald';
+        color: $background-color;
+        h2
         {
-            font-family: 'Oswald';
+            font-size: 36px;
+        }
+        p, a
+        {
             font-size: 24px;
-            margin: 0;
-            color: $text-color;
         }
-        a
+        .about-block__info-container
         {
-            height: 45px;
-            text-align: center;
-            text-decoration: none;
-            padding-top: 5px;
-        }
-        h1
-        {
-            font-size: 128px;
-            grid-column-start: 6;
-            grid-column-end: 8;
-            grid-row: 1;
-            display: flex;
-            justify-content: center;
-            align-items: end;
-        }
-        p
-        {
+            grid-column-start: 2;
+            grid-column-end: 6;
             grid-row: 2;
-            grid-column-start: 5;
-            grid-column-end: 9;
-            display: flex;
-            justify-content: center;
+            height: 100%;
+            p:last-of-type
+            {
+                font-weight: 100;
+            }
         }
-        a:first-of-type
+        .support-block__info-container
         {
+            grid-column-start: 2;
+            grid-column-end: 6;
             grid-row: 3;
-            grid-column-start: 5;
-            grid-column-end: 7;
-            background-color: $text-color;
-            color: $background-color;
+            height: 100%;
+            a
+            {
+                text-decoration: none;
+                color: $text-color;
+                width: 150px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $background-color;
+            }
+            P
+            {
+                font-weight: 100;
+            }
         }
-        a:last-of-type
+        .logo-container
         {
-            grid-row: 3;
             grid-column-start: 7;
-            grid-column-end: 9;
-            background-color: $background-color;
+            grid-column-end: 11;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            img
+            {
+                width: 50%;
+                height: 50%;
+                margin-right: 50px;
+            }
+            span
+            {
+                font-family: 'Staaliches';
+                font-size: 96px;
+            }
         }
     }
 }
