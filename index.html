@@ -12,7 +12,7 @@
     <header>
         <div class="header-container">
             <a href="index.html" class="header-logo">
-                <img src="main/img/svg/logo.svg" alt="logotype">
+                <img loading="lazy" src="main/img/svg/logo.svg" alt="logotype">
                 <span>GAMEROOM<br>RADIO</span>
             </a>
             <div class="header-menu__option-songs">
@@ -34,7 +34,7 @@
                 <div class="search-container">
                     <form action="404/404.html" method="get">
                         <button type="submit" id="searchButton" class="search-button">
-                            <img src="main/img/svg/search.svg" alt="search">
+                            <img loading="lazy" src="main/img/svg/search.svg" alt="search">
                         </button>
                         <input type="text" name="query" class="search-input" placeholder="Поиск">
                     </form>
@@ -87,7 +87,7 @@
             </div>
             <div class="change-volume">
                 <button id="volume-button">
-                    <img src="main/img/svg/speaker.svg" alt="volume">
+                    <img loading="lazy" src="main/img/svg/speaker.svg" alt="volume">
                 </button>
             </div>
             <div class="change-bitrate">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="sounds-block">
+        <div id="sounds-container" class="sounds-block">
             <div class="songs-search-form-container">
                 <form action="404/404.html" method="POST">
                     <h2>Поиск песен</h2>
@@ -116,86 +116,6 @@
                 </form>
             </div>
             <h2>Что было в эфире?</h2>
-            <div id="sound-1" class="sound-container">
-                <button class="sound-container__play">
-                    <img src="main/img/svg/play.svg" alt="play">
-                </button>
-                <div class="sound-info">
-                    <span class="sound-type">unknown_type</span>
-                    <span class="sound-name">unknown_name</span>
-                </div>
-                <div class="sound-info-advanced">
-                    <div class="sound-options">
-                        <button class="sound-like">
-                            <img src="main/img/svg/likes.svg" alt="like">
-                        </button>
-                        <button class="sound-bookmark">
-                            <img src="main/img/svg/bookmarks.svg" alt="bookmark">
-                        </button>
-                    </div>
-                    <span class="sound-date">01.01.1970 09:41</span>
-                </div>
-            </div>
-            <div id="sound-2" class="sound-container">
-                <button class="sound-container__play">
-                    <img src="main/img/svg/play.svg" alt="play">
-                </button>
-                <div class="sound-info">
-                    <span class="sound-type">unknown_type</span>
-                    <span class="sound-name">unknown_name</span>
-                </div>
-                <div class="sound-info-advanced">
-                    <div class="sound-options">
-                        <button class="sound-like">
-                            <img src="main/img/svg/likes.svg" alt="like">
-                        </button>
-                        <button class="sound-bookmark">
-                            <img src="main/img/svg/bookmarks.svg" alt="bookmark">
-                        </button>
-                    </div>
-                    <span class="sound-date">01.01.1970 09:41</span>
-                </div>
-            </div>
-            <div id="sound-3" class="sound-container">
-                <button class="sound-container__play">
-                    <img src="main/img/svg/play.svg" alt="play">
-                </button>
-                <div class="sound-info">
-                    <span class="sound-type">unknown_type</span>
-                    <span class="sound-name">unknown_name</span>
-                </div>
-                <div class="sound-info-advanced">
-                    <div class="sound-options">
-                        <button class="sound-like">
-                            <img src="main/img/svg/likes.svg" alt="like">
-                        </button>
-                        <button class="sound-bookmark">
-                            <img src="main/img/svg/bookmarks.svg" alt="bookmark">
-                        </button>
-                    </div>
-                    <span class="sound-date">01.01.1970 09:41</span>
-                </div>
-            </div>
-            <div id="sound-4" class="sound-container">
-                <button class="sound-container__play">
-                    <img src="main/img/svg/play.svg" alt="play">
-                </button>
-                <div class="sound-info">
-                    <span class="sound-type">unknown_type</span>
-                    <span class="sound-name">unknown_name</span>
-                </div>
-                <div class="sound-info-advanced">
-                    <div class="sound-options">
-                        <button class="sound-like">
-                            <img src="main/img/svg/likes.svg" alt="like">
-                        </button>
-                        <button class="sound-bookmark">
-                            <img src="main/img/svg/bookmarks.svg" alt="bookmark">
-                        </button>
-                    </div>
-                    <span class="sound-date">01.01.1970</span>
-                </div>
-            </div>
             <button id="sounds-showAll">Показать ещё</button>
         </div>
         <div class="podcasts-block">
@@ -218,7 +138,7 @@
             <div class="podcasts-container">
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -228,10 +148,31 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                            </button>
+                        </div>
+                        <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
+                    </div>
+                </div>
+                <div class="podcast-card">
+                    <div class="podcast-card__picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
+                    </div>
+                    <div class="podcast-card__info">
+                        <h2>unknown_title</h2>
+                        <p>unknown_description</p>
+                        <div class="podcast-card__info-"></div>
+                    </div>
+                    <div class="podcast-card__info-advanced">
+                        <div class="podcast-card__options">
+                            <button id="podcast-card__like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
+                            </button>
+                            <button id="podcast-card__bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -249,10 +190,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -260,7 +201,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -270,10 +211,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -281,7 +222,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -291,10 +232,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -302,7 +243,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -312,10 +253,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -323,7 +264,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -333,10 +274,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -344,7 +285,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -354,10 +295,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -365,7 +306,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -375,10 +316,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -386,7 +327,7 @@
                 </div>
                 <div class="podcast-card">
                     <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
+                        <img loading="lazy" src="main/img/webp/album.webp" alt="podcast picture">
                     </div>
                     <div class="podcast-card__info">
                         <h2>unknown_title</h2>
@@ -396,31 +337,10 @@
                     <div class="podcast-card__info-advanced">
                         <div class="podcast-card__options">
                             <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="podcast like">
                             </button>
                             <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
-                            </button>
-                        </div>
-                        <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
-                    </div>
-                </div>
-                <div class="podcast-card">
-                    <div class="podcast-card__picture">
-                        <img src="main/img/webp/album.webp" alt="podcast picture">
-                    </div>
-                    <div class="podcast-card__info">
-                        <h2>unknown_title</h2>
-                        <p>unknown_description</p>
-                        <div class="podcast-card__info-"></div>
-                    </div>
-                    <div class="podcast-card__info-advanced">
-                        <div class="podcast-card__options">
-                            <button id="podcast-card__like">
-                                <img src="main/img/svg/likes.svg" alt="podcast like">
-                            </button>
-                            <button id="podcast-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="podcast bookmark">
                             </button>
                         </div>
                         <span id="podcast-card__date">1 января 1970 г.<br>9:41</span>
@@ -455,10 +375,10 @@
                     <div class="news-card__info-advanced">
                         <div class="news-card__options">
                             <button id="news-card__like">
-                                <img src="main/img/svg/likes.svg" alt="news like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="news like">
                             </button>
                             <button id="news-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="news bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="news bookmark">
                             </button>
                         </div>
                         <span id="news-card__search">1 января 1970 г.<br>9:41</span>
@@ -474,10 +394,10 @@
                     <div class="news-card__info-advanced">
                         <div class="news-card__options">
                             <button id="news-card__like">
-                                <img src="main/img/svg/likes.svg" alt="news like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="news like">
                             </button>
                             <button id="news-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="news bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="news bookmark">
                             </button>
                         </div>
                         <span id="news-card__search">1 января 1970 г.<br>9:41</span>
@@ -493,10 +413,10 @@
                     <div class="news-card__info-advanced">
                         <div class="news-card__options">
                             <button id="news-card__like">
-                                <img src="main/img/svg/likes.svg" alt="news like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="news like">
                             </button>
                             <button id="news-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="news bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="news bookmark">
                             </button>
                         </div>
                         <span id="news-card__search">1 января 1970 г.<br>9:41</span>
@@ -512,10 +432,10 @@
                     <div class="news-card__info-advanced">
                         <div class="news-card__options">
                             <button id="news-card__like">
-                                <img src="main/img/svg/likes.svg" alt="news like">
+                                <img loading="lazy" src="main/img/svg/likes.svg" alt="news like">
                             </button>
                             <button id="news-card__bookmark">
-                                <img src="main/img/svg/bookmarks.svg" alt="news bookmark">
+                                <img loading="lazy" src="main/img/svg/bookmarks.svg" alt="news bookmark">
                             </button>
                         </div>
                         <span id="news-card__search">1 января 1970 г.<br>9:41</span>
@@ -532,18 +452,20 @@
             <h2>Мы в соц. сетях:</h2>
             <div class="social-media-links-container">
                 <button id="youtube-link">
-                    <img src="main/img/svg/youtube.svg" alt="youtube link">
+                    <img loading="lazy" src="main/img/svg/youtube.svg" alt="youtube link">
                 </button>
                 <button id="instagram-link">
-                    <img src="main/img/svg/instagram.svg" alt="instagram link">
+                    <img loading="lazy" src="main/img/svg/instagram.svg" alt="instagram link">
                 </button>
                 <button id="telegram-link">
-                    <img src="main/img/svg/telegram.svg" alt="telegram link">
+                    <img loading="lazy" src="main/img/svg/telegram.svg" alt="telegram link">
                 </button>
             </div>
         </div>
     </footer>
 <script src="main/js/swiper.js"></script>
+<script type="module" src="main/db/js/parse-data.min.js"></script>
+<script type="module" src="main/db/js/cards-data.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
