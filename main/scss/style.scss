@@ -482,7 +482,7 @@ main
                 }
             }
         }
-        .podcasts-container
+        #podcasts-container
         {
             grid-column-start: 2;
             grid-column-end: 12;
@@ -535,7 +535,7 @@ main
                             cursor: pointer;
                         }
                     }
-                    #podcast-card__date
+                    .podcast-card__date
                     {
                         text-align: end;
                     }
