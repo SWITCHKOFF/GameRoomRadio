@@ -643,7 +643,7 @@ main
                 }
             }
         }
-        .news-container
+        #news-container
         {
             grid-column-start: 2;
             grid-column-end: 12;
@@ -698,7 +698,7 @@ main
                             cursor: pointer;
                         }
                     }
-                    #news-card__search
+                    .news-card__date
                     {
                         text-align: end;
                     }
