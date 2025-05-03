@@ -1,0 +1,33 @@
+@import 'root.scss';
+
+footer
+{
+    background-color: $background-color;
+    display: grid;
+    grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    .social-media-container
+    {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        h2
+        {
+            margin-bottom: 15px;
+            font-family: 'Oswald';
+            font-size: 32px;
+            color: $text-color;
+        }
+        .social-media-links-container
+        {
+            button
+            {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}

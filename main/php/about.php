@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../main/img/svg/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../main/fonts/importFonts.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>О нас</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../main.php" class="header-logo">
+                <img src="../main/img/svg/logo.svg" alt="logotype">
+                <span>GAMEROOM<br>RADIO</span>
+            </a>
+            <div class="header-menu__option-songs">
+                <a href="../404/404.php">Песни</a>
+            </div>
+            <div class="header-menu__option-podcasts">
+                <a href="../404/404.php">Подкасты</a>
+            </div>
+            <div class="header-menu__option-news">
+                <a href="../404/404.php">Новости</a>
+            </div>
+            <div class="header-menu__option-about">
+                <a href="about.php">О нас</a>
+            </div>
+            <div class="header-menu__option-support">
+                <a href="../support/support.php">Поддержка</a>
+            </div>
+            <div class="header-menu__search">
+                <div class="search-container">
+                    <form action="../404/404.php" method="get">
+                        <button type="submit" id="searchButton" class="search-button">
+                            <img src="../main/img/svg/search.svg" alt="search">
+                        </button>
+                        <input type="text" name="query" class="search-input" placeholder="Поиск">
+                    </form>
+                </div>
+            </div>
+            <div class="header-menu__user-options">
+                <div class="user-options__option-likes">
+                    <a href="../404/404.php"><img src="../main/img/svg/likes.svg"></a>
+                </div>
+                <div class="user-options__option-bookmarks">
+                    <a href="../404/404.php"><img src="../main/img/svg/bookmarks.svg"></a>
+                </div>
+                <div class="user-options__option-user">
+                    <a href="../404/404.php"><img src="../main/img/svg/user.svg"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="player">
+            <span id="player-status">unknown_status</span>
+            <div class="album-container">
+                <button id="playRadio">
+                    <img src="../main/img/svg/play.svg" alt="play">
+                    <audio id="audio" src=""></audio>
+                </button>
+            </div>
+            <div class="song-container">
+                <span id="sound-type">unknown_type</span>
+                <span id="sound-name">unknown_name</span>
+            </div>
+            <div class="change-volume">
+                <button id="volume-button">
+                    <img src="../main/img/svg/speaker.svg" alt="volume">
+                </button>
+            </div>
+            <div class="change-bitrate">
+                <span>Битрейт</span>
+                <div class="bitrate-variants">
+                    <button id="bitrate-128">128</button>
+                    <button id="bitrate-256">256</button>
+                </div>
+            </div>
+        </div>
+        <div class="about-block">
+            <div class="about-block__info-container">
+                <h2>О нас</h2>
+                <p>Добро пожаловать на GameRoom Radio — ваш источник незабываемых музыкальных путешествий в мире видеоигр!<p>
+                <p>GameRoom Radio — это уникальная радиостанция, посвященная исключительно музыке из видеоигр. Мы создаем пространство, где каждый геймер может насладиться мелодиями из любимых игр, окунуться в ностальгию и открыть для себя новые звуковые горизонты.</p>
+            </div>
+            <div class="support-block__info-container">
+                <h2>Поддержка</h2>
+                <p>Если у вас возникли вопросы, проблемы или предложения, наша команда поддержки всегда готова вам помочь.</p>
+                <a href="../support/support.html">Поддержка</a>
+            </div>
+            <div class="logo-container">
+                <img src="../main/img/svg/logo.svg" alt="logotype">
+                <span>GAMEROOM<br>RADIO</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media-container">
+            <h2>Мы в соц. сетях:</h2>
+            <div class="social-media-links-container">
+                <button id="youtube-link">
+                    <img src="../main/img/svg/youtube.svg" alt="youtube link">
+                </button>
+                <button id="instagram-link">
+                    <img src="../main/img/svg/instagram.svg" alt="instagram link">
+                </button>
+                <button id="telegram-link">
+                    <img src="../main/img/svg/telegram.svg" alt="telegram link">
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
